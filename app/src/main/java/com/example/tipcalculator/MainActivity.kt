@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
+import android.util.*
 import android.widget.EditText
 import android.widget.SeekBar
 import android.widget.TextView
@@ -93,6 +93,6 @@ class MainActivity : AppCompatActivity() {
         val tipAmount = baseAmount * tipPercent / 100
         val totalAmount = baseAmount + tipAmount
         tvTipAmount.text = "%.2f".format(tipAmount)
-        tvTotalAmount.text = "%.1002f".format(totalAmount)
+        tvTotalAmount.text = "%.2f".format(totalAmount)
     }
 }
